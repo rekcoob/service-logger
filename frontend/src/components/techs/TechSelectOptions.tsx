@@ -21,12 +21,10 @@ const TechSelectOptions: React.FC<Props> = ({
 		getTechs();
 		// eslint-disable-next-line
 	}, []);
-	// console.log(techs);
 
 	return (
 		<>
 			{!loading &&
-				// loading === false &&
 				techs.length !== 0 &&
 				techs.map((t) => (
 					<option key={t._id} value={`${t.firstName} ${t.lastName}`}>

@@ -19,9 +19,7 @@ export const getTechs = (): ThunkAction<
 > => async (dispatch) => {
 	try {
 		setLoading();
-
 		const res = await axios.get('/techs');
-		// const data = res.data;
 
 		dispatch({
 			type: GET_TECHS,
@@ -50,9 +48,8 @@ export const addTech = (
 ) => {
 	try {
 		setLoading();
-
 		const res = await axios.post('/techs', tech, config);
-		// const data = res.data;
+
 		dispatch({
 			type: ADD_TECH,
 			payload: res.data,
@@ -75,8 +72,6 @@ export const deleteTech = (
 		setLoading();
 		await axios.delete(`/techs/${id}`);
 
-		// const res = await axios.get('/logs');
-		// const data = res.data;
 		dispatch({
 			type: DELETE_TECH,
 			payload: id,

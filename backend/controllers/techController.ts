@@ -19,11 +19,7 @@ const addTech = async (req: Request, res: Response): Promise<void> => {
 			lastName: body.lastName,
 		});
 		const newTech: ITech = await tech.save();
-		// const allTechs: ITech[] = await Tech.find();
-		res
-			.status(201)
-			// .json({ message: 'Tech added', tech: newTech, techs: allTechs });
-			.json(newTech);
+		res.status(201).json(newTech);
 	} catch (error) {
 		throw error;
 	}
@@ -31,16 +27,7 @@ const addTech = async (req: Request, res: Response): Promise<void> => {
 
 const deleteTech = async (req: Request, res: Response): Promise<void> => {
 	try {
-		// const deletedTech: ITech | null = await Tech.findByIdAndRemove(
-		// 	req.params.id
-		// );
 		await Tech.findByIdAndRemove(req.params.id);
-		// const allTechs: ITech[] = await Tech.find();
-		// res.status(200).json({
-		// 	message: 'Tech deleted',
-		// 	tech: deletedTech,
-		// 	techs: allTechs,
-		// });
 		res.status(200).json({ message: 'Tech deleted' });
 	} catch (error) {
 		throw error;

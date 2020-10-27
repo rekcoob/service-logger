@@ -20,7 +20,6 @@ const Logs: React.FC<Props> = ({
 }) => {
 	useEffect(() => {
 		getLogs();
-		// [] only run once
 		// eslint-disable-next-line
 	}, []);
 
