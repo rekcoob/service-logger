@@ -1,0 +1,47 @@
+SCRIPTS
+yarn add -D json-server concurrently
+yarn add materialize-css@next
+yarn add redux react-redux redux-thunk redux-devtools-extension
+yarn add -D @types/redux @types/react-redux @types/redux-thunk
+
+TODOLIST
+
+Frontend
+/-"proxy": "http://localhost:5000"
+/-preloader to jsx
+/-AddLogModal, EditLogModal any state
+/-TechItem, TechListModal axios
+/-Props-Type
+/- Logs - Redux Props
+/- SearchBar - value , ref
+
+Backend:
+/- make Backend in NODE MONGODB iloger-src last checkpoint
+|- join tech log # not needed
+/- search form
+/- use effect console log 
+
+Full Stack
+/- update log not refreshing dom # controller { new: true}
+
+/-Name of App
+/-id delete?
+/-dotenv
+
+https://stackoverflow.com/questions/53545800/internal-modules-cjs-loader-js582-throw-err/54938249
+
+Commit
+commit with comments,
+commit without comments,
+commit deploy heroku
+
+Deploy
+/- ../../
+/- DB sirius
+- GitHub
+/- Heroku
+
+deploy heroku
+ptm upravit a deploy na GitHub
+/ptm upravit db a deploy na Heroku again
+fill db
